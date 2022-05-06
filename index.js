@@ -10,11 +10,14 @@ function hendelCookie() {
       close(cookiepopupDiv)
     } else {
       const cookiepopupButton = document.querySelector('[data-popup-button]');
-      cookiepopupButton.addEventListener('click',()=>{
-        localStorage.setItem('MyCookie', true);
-        close(cookiepopupDiv)
-      })
+      cookiepopupButton.addEventListener('click',setLocalItem)
     }
+}
+
+
+function setLocalItem(){
+  localStorage.setItem('MyCookie', true);
+        close(cookiepopupDiv)
 }
 
 
