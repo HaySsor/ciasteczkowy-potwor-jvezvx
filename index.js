@@ -1,6 +1,15 @@
 // Import stylesheets
 import './style.css';
 
+function setLocalItem(){
+  localStorage.setItem('MyCookie', true);
+        close(cookiepopupDiv)
+}
+
+
+function close(element) {
+  element.classList.add('close');
+}
 
 hendelCookie()
 function hendelCookie() {
@@ -15,12 +24,3 @@ function hendelCookie() {
 }
 
 
-function setLocalItem(){
-  localStorage.setItem('MyCookie', true);
-        close(cookiepopupDiv)
-}
-
-
-function close(element) {
-  element.classList.add('close');
-}
